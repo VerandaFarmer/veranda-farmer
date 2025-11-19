@@ -2,7 +2,8 @@
 
 <div align="center">
 
-![베란다농부_로고](https://via.placeholder.com/400x200/4CAF50/FFFFFF?text=Balcony+Farmer)
+<img width="432" height="126" alt="Frame 6" src="https://github.com/user-attachments/assets/8334f8f1-eea8-4115-9479-7134020c39b3" />
+
 
 **스마트팜 IoT 시스템으로 누구나 쉽게 베란다에서 작물을 재배할 수 있습니다**
 
