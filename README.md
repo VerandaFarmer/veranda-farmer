@@ -5,7 +5,7 @@
 <img width="432" height="126" alt="Frame 6" src="https://github.com/user-attachments/assets/8334f8f1-eea8-4115-9479-7134020c39b3" />
 
 
-**스마트팜 IoT 시스템으로 누구나 쉽게 베란다에서 작물을 재배할 수 있습니다**
+**스마트팜 IoT 시스템으로 누구나 쉽게 작물을 재배할 수 있습니다**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/dadadadamin/minifarm)
 [![Swagger](https://img.shields.io/badge/Swagger-API_Docs-85EA2D?logo=swagger&logoColor=black)](https://petstore.swagger.io)
@@ -37,7 +37,7 @@
 - IoT 센서와 자동화로 최적의 재배 환경 제공
 
 ### 진행 기간
-**2024.10.01 ~ 2024.11.20** (8주)
+**2024.10.01 ~ 2024.11.28** (9주)
 
 ---
 
@@ -46,10 +46,9 @@
 ### 1. 실시간 환경 모니터링 📊
 - 온도, 습도, CO2, EC, 조도, 토양 수분 실시간 측정
 - 센서 데이터 시각화 대시보드
-- 환경 데이터 이력 조회 및 통계
 
 ### 2. 원격 장치 제어 🎮
-- 관수 펌프 자동/수동 제어
+- 워터 펌프 자동/수동 제어
 - LED 조명 On/Off 및 밝기 조절
 - 환풍기 제어로 환기 관리
 - WebSocket 기반 실시간 제어
@@ -58,30 +57,39 @@
 - 작물별 최적 환경 조건 제공
 - 생육 단계별 관리 가이드
 - 작물 성장 기록 및 사진 저장
-- 수확 예상 시기 알림
 
-### 4. 자동화 규칙 설정 ⚙️
+### 4. STT/TTS 기반 스마트팜 관리 및 제어 🗣️
+- 마음 AI Suda Kit를 이용한 STT/TTS 기능
+- 음성 인터페이스를 이용한 기기제어, 센서 데이터 관리
+
+### 5. 자동화 규칙 설정 ⚙️
 - 조건 기반 자동 제어 (예: 토양 수분 30% 이하 시 자동 관수)
-- 시간 기반 스케줄링 (예: 오전 6시 조명 ON)
-- 복합 조건 설정 가능
 
-### 5. 알림 및 통계 📱
+### 6. 알림 및 통계 📱
 - 이상 환경 감지 시 Push 알림
 - 일/주/월 단위 환경 통계
 - 작물별 생육 분석 리포트
+
+### 7. 식물 성장 다이어리 📅
+- 식물의 사진과 설명을 캘린더에 기록하여 다양한 인터랙션 제공
+- 업로드한 식물 사진을 타임랩스로 기록
+
+### 8. AI식물 진단 💊
+- 스마트팜 카메라를 이용한 식물 사진 촬영과 식물 사진 기반 open vision api를 활용한
+  병해충 진단 및 식물 건강 진단
 
 ---
 
 ## 🛠 기술 스택
 
 ### Backend
-<img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white"/> <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat-square&logo=Spring Boot&logoColor=white"/> <img src="https://img.shields.io/badge/Spring Security-6DB33F?style=flat-square&logo=Spring Security&logoColor=white"/> <img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=JSON Web Tokens&logoColor=white"/> <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white"/> <img src="https://img.shields.io/badge/WebSocket-010101?style=flat-square&logo=Socket.io&logoColor=white"/>
+<img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/> <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/> <img src="https://img.shields.io/badge/MQTT-660066?style=flat-square&logo=mqtt&logoColor=white"/>
 
 ### Frontend
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white"/> <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=Vite&logoColor=white"/> <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=Tailwind CSS&logoColor=white"/> <img src="https://img.shields.io/badge/Recharts-FF6384?style=flat-square&logo=Chart.js&logoColor=white"/>
+<img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white"/> <img src="https://img.shields.io/badge/Android%20Studio-3DDC84?style=flat-square&logo=androidstudio&logoColor=white"/>
 
 ### IoT / Hardware
-<img src="https://img.shields.io/badge/Raspberry Pi-A22846?style=flat-square&logo=Raspberry Pi&logoColor=white"/> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/> <img src="https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=Arduino&logoColor=white"/> <img src="https://img.shields.io/badge/MQTT-660066?style=flat-square&logo=MQTT&logoColor=white"/>
+<img src="https://img.shields.io/badge/SudaKit-FF6B6B?style=flat-square&logoColor=white"/> <img src="https://img.shields.io/badge/MQTT-660066?style=flat-square&logo=mqtt&logoColor=white"/> <img src="https://img.shields.io/badge/Mosquitto-3C5280?style=flat-square&logo=eclipsemosquitto&logoColor=white"/> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white"/>
 
 **센서 목록**
 - DHT22 (온습도 센서)
@@ -91,10 +99,10 @@
 - 토양 수분 센서
 
 ### Server & DevOps
-<img src="https://img.shields.io/badge/AWS EC2-FF9900?style=flat-square&logo=Amazon EC2&logoColor=white"/> <img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=Nginx&logoColor=white"/> <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white"/> <img src="https://img.shields.io/badge/GitHub Actions-2088FF?style=flat-square&logo=GitHub Actions&logoColor=white"/>
+<img src="https://img.shields.io/badge/AWS%20EC2-FF9900?style=flat-square&logo=amazonec2&logoColor=white"/> <img src="https://img.shields.io/badge/AWS%20S3-569A31?style=flat-square&logo=amazons3&logoColor=white"/>
 
 ### Cooperation & Communication
-<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white"/> <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/> <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=Notion&logoColor=white"/> <img src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=Slack&logoColor=white"/> <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white"/>
+<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white"/> <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/> <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=Notion&logoColor=white"/> <img src="https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=Slack&logoColor=white"/> <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=Figma&logoColor=white"/> <img src="https://img.shields.io/badge/Discord-5865F2?style=flat-square&logo=discord&logoColor=white"/>
 
 ---
 
@@ -124,18 +132,16 @@
                     │  - Soil Moisture    │
                     └─────────────────────┘
 ```
-
+<img width="1591" height="863" alt="스크린샷 2025-11-14 오후 7 04 15" src="https://github.com/user-attachments/assets/eacfaf93-10c7-421d-b2f5-a3fe44c9b3c0" />
 ---
 
 ## 👥 팀원 소개
 
 | 이름 | 역할 | GitHub | 담당 업무 |
 |------|------|--------|-----------|
-| **팀장** | Backend / IoT | [@github](https://github.com) | 센서 연동, API 개발 |
-| **팀원1** | Backend | [@github](https://github.com) | 인증/인가, DB 설계 |
-| **팀원2** | Frontend | [@github](https://github.com) | UI/UX, 대시보드 개발 |
-| **팀원3** | Frontend / IoT | [@github](https://github.com) | 실시간 데이터 시각화 |
-| **팀원4** | Infra / DevOps | [@github](https://github.com) | 서버 구축, CI/CD |
+| 황필호 | Backend | [@github](https://github.com) | 머신러닝, IoT 개발, 라즈베리파이 개발 |
+| 이다민 | Backend | [@github](https://github.com) | 서버 구축, 기능 구현, DB설계 |
+| 김윤호 | Frontend | [@github](https://github.com) | UI/UX 개발, IoT 개발 |
 
 ---
 
@@ -373,19 +379,12 @@ CREATE INDEX idx_sensor_time ON sensor_data(sensor_type, timestamp DESC);
 ### 작물 관리
 ![작물관리](https://via.placeholder.com/800x450/FF9800/FFFFFF?text=Plant+Management)
 
----
-
-## 📜 라이선스
-
-This project is licensed under the MIT License.
 
 ---
 
 ## 🙏 감사의 말
 
 이 프로젝트는 한성대학교 컴퓨터공학부 졸업 프로젝트로 진행되었습니다.
-
-**Contact**: your-email@example.com
 
 ---
 
