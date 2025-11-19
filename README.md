@@ -362,7 +362,7 @@ CREATE INDEX idx_sensor_time ON sensor_data(sensor_type, timestamp DESC);
 
 ## 📝 API 문서
 
-상세한 API 명세는 Swagger UI에서 확인하실 수 있습니다.
+👉 **[Notion 개발일지 바로가기](https://www.notion.so/2798e86a04c38065a111eaceb655d90d?source=copy_link)**
 
 👉 **[Swagger API 문서 바로가기](https://petstore.swagger.io/?url=https://raw.githubusercontent.com/dadadadamin/minifarm/main/swagger.yaml)**
 
